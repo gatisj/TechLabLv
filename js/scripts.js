@@ -33,7 +33,7 @@
     	fullHeight();
     });
 
-	$(window).load(function() {
+	$('#video-bg').ready(function() {
 		videoHeight();
 		$("#video-bg").addClass("on");
 		fullHeight();
