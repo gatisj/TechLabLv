@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navi.html %}
+
+    <div id="top-image" class="img-gb" style="background-image:url('{{ site.baseurl }}/images/{{ page.bgbigimage }}');">
+	<div class="bg">
+		<div class="container">
+			<h1>{{ page.title }}</h1>
+		</div>
+	</div>
+</div>
+
+<div id="single" class="container">
+	<div class="row">
+	<article class="col-md-8 col-md-push-4">
+		<ul class="cats clearfix">
+			<li><a href="/blog#{{ page.category }}">{{ page.category }}</a></li>
+			<li>{{ page.tag }}</li>
+		</ul>
+		<p class="intro">{{ page.short }}</p>
+
+		{{ content }}
+
+		<br/>&nbsp;<br/>
+
+		<div id="disqus_thread"></div>
+		<script>
+		var disqus_config = function () {
+        this.page.url = '{{ site.url }}{{ page.url }}';
+        this.page.identifier = '{{ page.url }}';
+    };
+    
+    (function() {  
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//techlablv.disqus.com/embed.js';  
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.
+		</a></noscript>
+
+	</article>
+	<aside class="col-md-4 col-md-pull-8">
+		<div class="author">
+			<div class="col1">
+				<img class="responsive" src="{{ site.baseurl }}/images/{{ page.authorphoto }}">
+			</div>
+			<div class="col2">
+				<p class="name">by <strong>{{ page.author }}</strong></p>
+				<p class="desc">{{ page.worktitle }}</p>
+				<p class="date">{{ page.date | date: "%b %-d, %Y" }}</p>
+				<p class="cats">on <a href="/blog#{{ page.category }}">{{ page.category }}</a>, {{ page.tag }}</p>
+			</div>
+		</div>	
+	</aside>
+	</div>
+</div>	
+
+    {% include footer.html %}
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script> 
+  <script src="{{ site.baseurl }}/js/scripts.js"></script> 
+  <script id="dsq-count-scr" src="//techlablv.disqus.com/count.js" async></script>
+</body>
+</html>

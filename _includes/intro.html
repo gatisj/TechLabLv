@@ -1,0 +1,111 @@
+<div id="video-bg">
+	<video poster="{{ site.baseurl }}/images/video-start.jpg" autoplay="" loop="">
+		<source src="{{ site.baseurl }}/video/techlab.mp4" type="video/mp4">
+		<source src="{{ site.baseurl }}/video/techlab.webm" type="video/webm">
+	</video>
+	<div class="container">
+		<div class="box">
+		<img class="logo" src="{{ site.baseurl }}/images/logo.svg">
+		<h3>Welcome to TechLab</h3>
+		<p>Here's to The Brave One's! Those who Reinvent the World! One's who challenge things!</p>
+		<p>One's who support each other 150%. All the Time!</p>
+		</div>
+	</div>
+</div>
+
+<div id="blog-list">
+	<div class="container">
+	{% assign maxPost = 4 %}
+	{% assign counter = 0 %}
+    {% for post in site.posts  | sort:"date" | reverse %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    	{% if thecycle == 'odd' %}
+    		<section class="post">
+    	{% else %}		
+    	    <section class="post down">
+  		{% endif %}
+			<a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.short }}">
+				<div class="bg" style="background-image: url('{{ site.baseurl }}/images/{{ post.bgimage }}');">
+					<div class="desc">
+						<h2>{{ post.title }}</h2>
+						<p>{{ post.date | date: "%b %-d, %Y" }}</p>
+					</div>
+				</div>
+			</a>
+			<div class="footer">
+				<div class="cat"><a href="/blog#{{ post.category }}">{{ post.category }}</a></div>
+				<div class="tags">{{ post.tag }}</div>
+			</div>
+		</section>	
+	{% assign counter = counter | plus: 1 %}
+    {% if counter == maxPost %}
+        {% break %}
+    {% endif %}
+    {% endfor %}
+		<div class="pair-seperator last"></div>
+		<div class="bottom"><a href="/blog/" class="button"><p>Go to Blog</p></a></div>	
+	</div>	
+</div>
+
+<div id="fp-con0">
+	<div class="container">	
+		<h2>An Open Community</h2>
+	</div>
+</div>
+
+<div id="fp-con1">
+	<div class="container">
+		<div class="wrapper">
+		<div class="col">
+			<div class="l1">
+				<h3 class="inner">Pioneering IoT</h3>
+			</div>
+			<div class="l2">
+				<div class="inner">
+					<h3>Smart Home Research & Development</h3>	
+					<p>The TechLab prototyping & research lab enables you to quickly develop, test & launch your ideas. It is Research and Development lab handling both hardware and software.</p>
+					<h3>FinTech & IoT</h3>
+					<p>Agile Community armed with skills, & tools for FinTech related product & solutions research</p>
+				</div>
+			</div>	
+		</div>
+		<div class="col full-h img-gb" style="height: 380px; background-image: url(&quot;images/office.jpg&quot;);"></div>
+		</div>	
+	</div>
+</div>
+
+<div id="fp-con2">
+	<div class="container">
+		<div class="col col1">
+			<div class="inner">
+				<h3>Equipment</h3>
+				<p>TechLab has everything you might need, from 3D printing, CNC & welding to collaborative software and framework knowledge.</p>
+				<a href="{{ site.baseurl }}/equipment/" class="button"><p>List of Equipment</p></a>	
+			</div>
+		</div>
+		<div class="col col2">
+			<div class="inner">
+				<h3>Have an Idea?</h3>
+				<p>If you are like us, but lack skills, technical and prototyping resources for IoT design and development, TechLab is there for you! Just drop us a pitch line & your contacts!</p>
+				<a href="mailto:info@techlab.lv" class="button white"><p>Apply Here</p></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="fp-con3">
+	<div class="container">	
+		<h2>Our Supporters & Events</h2>
+	</div>
+</div>
+
+<div id="supporters">
+	<div class="container">
+		<ul>	
+			<li><a href="http://www.knowledgeprice.com"><img src="{{ site.baseurl }}/images/sup-1.png" alt="KNOWLEDGEPRICE.COM"></a></li>
+			<li><a href="http://ninety.co.uk"><img src="{{ site.baseurl }}/images/sup-2.png" alt="Ninety"></a></li>
+			<li><a href="http://rigacomm.com/iot-conference/"><img src="{{ site.baseurl }}/images/sup-3.png" alt="Riga Comm 2016 IoT conference"></a></li>
+			<li><img src="{{ site.baseurl }}/images/sup-4.png" alt="Galeo Consulting"></li>
+		</ul>
+	</div>
+</div>

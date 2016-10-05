@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Meet us at Riga Comm October 20, 21"
+date:   2016-10-03 13:41:07 +0300
+bgimage: blog-4.jpg
+bgbigimage: tsh.jpg
+short: We are super excited to meet with mindlike people at the biggest IoT conference in Latvia - Riga Comm 2016!
+author: Māris Plots
+authorphoto: author-1.jpg
+worktitle: Senior Labs Manager, Software Engineer
+category: Events
+tag: RigaComm
+---
+Keen to know more about IoT and meet us in person? Let's catch up at the biggest IoT event in Riga, Latvia this year - Riga Comm 2016 IoT Conference!
+
+As RigaComm says - Internet of Things Conference is the first conference of its kind in the Baltics offering an application based vision on smart things, discussing topics ranging from smart home to industrial IoT. Conference will be about the opportunities and benefits in order to increase personal and organizational productivity.
+
+In the programm - Connected Living: Smart Homes & Wearables, Future Smart Cities & Connected Vehicles, Telemedicine & Smart Healthcare, IoT in Retail & Finance. Also to mention - Smart Grid: Future of Energy Delivery, Smart Farming & Sustainable Agriculture and last, but not least an important subject - Security & Privacy in a Connected World.
+
+We will be located in the main hall, right next to the entrance to the Keynotes Theater.
+
+Come and meet us - October 20 to 21 in Kipsala Exhibition Centre, Kipsala, Riga.

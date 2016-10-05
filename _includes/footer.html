@@ -1,0 +1,22 @@
+<footer>
+  <div class="container">
+    <ul class="social">
+      <li><a href="https://www.facebook.com/techlablatvia/"><img src="{{ site.baseurl }}/images/soc-1.png" alt="TechLab at Facebook"></a></li>
+      <li><a href="https://foursquare.com/v/knowledgepricecom-birojs/4e4bd350a8097d9c84c03f3c"><img src="{{ site.baseurl }}/images/soc-2.png" alt="Knowledgeprice.com at Foursquare"></a></li>
+      <li><a href="https://www.linkedin.com/company/knowledgeprice-com"><img src="{{ site.baseurl }}/images/soc-3.png" alt="Knowledgeprice.com at LinkedIn"></a></li>
+    </ul>
+    <ul class="menu">
+      <li><a href="{{ site.baseurl }}/">Home</a></li>
+      {% for the_page in site.pages %}
+      <li><a href="{{ the_page.url }}">{{ the_page.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <img class="logo" src="{{ site.baseurl }}/images/logo.svg">
+    <ul class="contacts">
+      <li>© {{ site.time | date: '%Y' }}. Tech Lab Latvia.</li>
+      <li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      <li>Call us: +371 292277340</li>
+      <li>Site built by: <a href="http://itero.eu">Itero</a>
+    </ul>
+  </div>
+</footer>
