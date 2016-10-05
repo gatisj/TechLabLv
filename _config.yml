@@ -18,3 +18,6 @@ facebook_address: https://www.facebook.com/techlablatvia/
 
 # Build settings
 markdown: kramdown
+
+sass:
+    sass_dir: _sass
