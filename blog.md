@@ -15,7 +15,7 @@ permalink: /blog/
       {% for post in posts %}
       		{% if post.title != nil %}
       		<section class="col-xs-12">
-			<div class="tb"><img src="{{ site.baseurl }}/images/{{ post.bgbigimage }}"></div>
+			<div class="tb"><img src="{{ site.baseurl }}/images/{{ post.bgimage }}"></div>
 			<div class="cont">
 				<div class="date">{{ post.date | date: "%b %-d, %Y" }}</div>
 				<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
