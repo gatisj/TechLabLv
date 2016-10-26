@@ -18,9 +18,9 @@
           {% if my_page.title %}
 
               {% if page.url == my_page.url %}
-              <li class="active"><a href="{{my_page.url}}" class="active">{{my_page.title}}</a></li>
+              <li class="active"><a href="{{site.baseurl}}{{my_page.url}}" class="active">{{my_page.title}}</a></li>
               {% else %}
-              <li><a href="{{my_page.url}}">{{my_page.title}}</a></li>
+              <li><a href="{{site.baseurl}}{{my_page.url}}">{{my_page.title}}</a></li>
               {% endif %}
 
           {% endif %}
