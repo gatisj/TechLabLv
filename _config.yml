@@ -3,8 +3,8 @@ title: TechLab
 email: info@techlab.lv
 description: > # this means to ignore newlines until "baseurl:"
   TechLab - community for technology entrepreneurs, scientists, coders and engineers.. a place where new startups are born. 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.techlab.lv" # the base hostname & protocol for your site
+baseurl: "/TestTechLabLv" # the subpath of your site, e.g. /blog
+url: "https://galeolv.github.io" # the base hostname & protocol for your site
 #twitter_username: xx
 facebook_address: https://www.facebook.com/techlablatvia/
 #github_username:  xx
