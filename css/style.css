@@ -39,10 +39,11 @@ ul, ol {padding-left: 17px;}
 .slbg {position: absolute;}
 
 #video-bg.on {visibility: visible}
+#imgbg,
 #video-bg video {position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; transform: translateX(-50%) translateY(-50%); transition: 1s opacity; }
+#imgbg {display: none; background-repeat: no-repeat; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 #video-bg {width: 100%; height: 670px; overflow: hidden; position: relative;}
 #video-bg .container {position: relative; text-align: center; color:#FFF;}
-/*#video-bg img.slbg { display: block; max-width: none!important; position: absolute;}*/
 #video-bg .box {margin-top: 160px;}
 #video-bg img.logo {width: 226px; margin: 0 0 38px}
 #video-bg h3 {font-size: 45px; margin: 0 0 23px; text-shadow: 0 2px 2px #000000;}
