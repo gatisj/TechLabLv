@@ -19,6 +19,10 @@
 	<div class="row">
 	<article class="col-md-8 col-md-push-4">
 		<ul class="cats clearfix">
+			
+			{% for category in page.categories %}
+			    <li><a href="/blog#{{ category }}">{{ category }}</a></li>
+			{% endfor %}
 			<li><a href="/blog#{{ page.category }}">{{ page.category }}</a></li>
 			<li>{{ page.tag }}</li>
 		</ul>
