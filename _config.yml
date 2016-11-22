@@ -11,7 +11,7 @@ collections:
 email: info@techlab.lv
 description: "TechLab - community for technology entrepreneurs, scientists, coders
   and engineers.. a place where new startups are born. \n"
-baseurl: ''
+baseurl: 
 url: http://www.techlab.lv
 facebook_address: https://www.facebook.com/techlablatvia/
 markdown: kramdown
