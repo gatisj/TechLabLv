@@ -1,22 +1,22 @@
-# Site settings
+---
 title: TechLab
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: info@techlab.lv
-description: > # this means to ignore newlines until "baseurl:"
-  TechLab - community for technology entrepreneurs, scientists, coders and engineers.. a place where new startups are born. 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.techlab.lv" # the base hostname & protocol for your site
-#twitter_username: xx
+description: "TechLab - community for technology entrepreneurs, scientists, coders
+  and engineers.. a place where new startups are born. \n"
+baseurl: ''
+url: http://www.techlab.lv
 facebook_address: https://www.facebook.com/techlablatvia/
-#github_username:  xx
-
-# Build settings
 markdown: kramdown
-
-#sass:
-#    sass_dir: _sass
-
 exclude:
-  - CNAME
-  - LICENSE
-  - README.md
-  - run.sh
+- CNAME
+- LICENSE
+- README.md
+- run.sh

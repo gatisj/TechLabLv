@@ -1,9 +1,10 @@
 ---
-layout: page
 title: Blog
+permalink: "/blog/"
+layout: page
 bgbigimage: tsh.jpg
-permalink: /blog/
 ---
+
 <div id="blog" class="container">
 {% for category in site.categories %}
 	<div class="category row">

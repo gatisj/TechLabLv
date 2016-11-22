@@ -1,16 +1,20 @@
 ---
+title: 'New tool acquired: 3D printer'
+date: 2016-04-06 10:41:07 Z
+categories:
+- tools
+tags:
+- 3dprinting
 layout: post
-title:  "New tool acquired: 3D printer"
-date:   2016-04-06 13:41:07 +0300
 bgimage: blog-1.jpg
 bgbigimage: tsh.jpg
-short: We're excited to have a great addition to our toolset - super precise 3D printer by Mass Portal for our prototypes.
+short: We're excited to have a great addition to our toolset - super precise 3D printer
+  by Mass Portal for our prototypes.
 author: Māris Plots
 authorphoto: author-1.jpg
 worktitle: Senior Labs Manager, Software Engineer
-category: tools
-tag: 3dprinting
 ---
+
 We are excited to announce, that we have acquired a High Definition 3D printer for our prototyping needs. 
 With Pharaoh model XD we can now print in most thermoplastic materials with one of the best available surface quality in industry.
 

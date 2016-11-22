@@ -1,9 +1,10 @@
 ---
-layout: page
 title: Equipment
+permalink: "/equipment/"
+layout: page
 bgbigimage: tsh.jpg
-permalink: /equipment/
 ---
+
 <div id="fp-con3">
 <h2>Endless possibilities for Creative minds</h2>
 </div>
