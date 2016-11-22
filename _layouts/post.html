@@ -23,8 +23,10 @@
 			{% for category in page.categories %}
 			    <li><a href="/blog#{{ category }}">{{ category }}</a></li>
 			{% endfor %}
-			<li><a href="/blog#{{ page.category }}">{{ page.category }}</a></li>
-			<li>{{ page.tag }}</li>
+			
+			{% for tag in page.tags %}
+			    <li>{{ tag }}</li>
+			{% endfor %}
 		</ul>
 		<p class="intro">{{ page.short }}</p>
 
@@ -61,7 +63,15 @@
 				<p class="name">by <strong>{{ page.author }}</strong></p>
 				<p class="desc">{{ page.worktitle }}</p>
 				<p class="date">{{ page.date | date: "%b %-d, %Y" }}</p>
-				<p class="cats">on <a href="/blog#{{ page.category }}">{{ page.category }}</a>, {{ page.tag }}</p>
+				<p class="cats">on 
+					{% for category in page.categories %}
+					    <a href="/blog#{{ category }}">{{ category }}</a>
+					{% endfor %}
+					, 
+					{% for tag in page.tags %}
+					    {{ tag }}
+					{% endfor %}
+				</p>
 			</div>
 		</div>	
 	</aside>
