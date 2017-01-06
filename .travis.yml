@@ -3,7 +3,7 @@ rvm:
 - 2.1
 
 install: gem install jekyll jekyll-sitemap
-script: ./build.sh
+script: scripts/build.sh
 
 # branch whitelist
 branches:
@@ -15,9 +15,9 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: scripts/deploy.sh
-  on:
-    branch: gh-pages
+#deploy:
+#  skip_cleanup: true
+#  provider: script
+#  script: scripts/deploy.sh
+#  on:
+#    branch: gh-pages
