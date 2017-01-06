@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.1
 
-install: gem install jekyll jekyll-sitemap
+install: gem install jekyll jekyll-sitemap sass
 script: ./build.sh
 
 # branch whitelist
